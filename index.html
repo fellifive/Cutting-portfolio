@@ -164,10 +164,25 @@
   }
 
   /* VIDEOS */
+  .video-intro{
+    color:var(--muted);
+    font-size:1rem;
+    margin-bottom:32px;
+    max-width:520px;
+  }
   .video-grid{
     display:grid;
     grid-template-columns:1fr;
     gap:24px;
+  }
+  .video-item{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .video-caption{
+    color:var(--muted);
+    font-size:0.9rem;
   }
   .video-frame{
     position:relative;
@@ -407,15 +422,25 @@
     <h2>Portfolio-Video</h2>
     <span class="section-num">01</span>
   </div>
+  <p class="video-intro">Das sind Beispiel Animationen für Videos.</p>
   <div class="video-grid">
-    <div class="video-frame">
-      <video controls playsinline preload="metadata" src="portfolio-1.mp4"></video>
+    <div class="video-item">
+      <div class="video-frame">
+        <video controls playsinline preload="metadata" src="portfolio-1.mp4"></video>
+      </div>
+      <p class="video-caption">Das ist eine Animation für die YouTube-Reihe "Ich kläre Frauen für meine Zuschauer".</p>
     </div>
-    <div class="video-frame">
-      <video controls playsinline preload="metadata" src="portfolio-2.mp4"></video>
+    <div class="video-item">
+      <div class="video-frame">
+        <video controls playsinline preload="metadata" src="portfolio-2.mp4"></video>
+      </div>
+      <p class="video-caption">Das ist eine Animation für Videos mit Glücksrädern.</p>
     </div>
-    <div class="video-frame">
-      <video controls playsinline preload="metadata" src="portfolio-3.mp4"></video>
+    <div class="video-item">
+      <div class="video-frame">
+        <video controls playsinline preload="metadata" src="portfolio-3.mp4"></video>
+      </div>
+      <p class="video-caption">Das ist eine Animation für jegliche Videos.</p>
     </div>
   </div>
 </section>
@@ -443,14 +468,7 @@
 </section>
 
 <footer id="kontakt" class="wrap">
-  <h2>Lust auf<br>Zusammenarbeit?</h2>
-  <p style="color:var(--muted); max-width:420px;">
-    Schreib mir gerne für Anfragen, Projekte oder einfach für Feedback zu meiner Arbeit.
-  </p>
-  <div class="contact-links">
-    <a href="mailto:kontakt@marcoscm.de">kontakt@marcoscm.de</a>
-  </div>
-  <p class="foot-note">© 2026 MarcoSCM — Video Editing Portfolio</p>
+  <p class="foot-note">© 2026 Fellifive — Video Editing Portfolio</p>
 </footer>
 
 </body>
